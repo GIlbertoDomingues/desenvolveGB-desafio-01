@@ -1,0 +1,107 @@
+:root {
+  --gray-darker: #3C3C3C;
+  --gray-lighter: #CCC;
+
+  --white: #FFF;
+	--blue: #6CD0DB;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrapper {
+  display: flex;
+
+  justify-content: center;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wrap-sidebar {
+  width: 30vw;
+	height: 100vh;
+  background-color: var(--gray-darker);
+
+  padding: 20px;
+}
+
+.wrap-sidebar .title {
+	color: var(--white);
+}
+
+.wrap-section {
+  width: 70vw;
+  padding-top: 20px;
+  padding-left: 68px;
+}
+
+.wrap-section .title {
+	color: var(--blue);
+}
+
+
+
+/* List skills */
+.list-skills {
+	width: 260px;
+}
+
+.list-skill--item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.list-skill--item .skill-name {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 500;
+	color: var(--gray-darker);
+	text-transform: uppercase;
+}
+
+.wrap-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap-dots .dots {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--gray-darker);
+	margin: 0  3.5px;
+}
+
+.wrap-dots .dots.active {
+	background-color: var(--blue);
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .wrap-sidebar {
+    width: 100vw;
+  }
+
+  .wrap-section {
+    width: 100vw;
+  }
+}
